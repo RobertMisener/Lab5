@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Doggie;
 
 namespace Lab5
 {
@@ -10,6 +11,15 @@ namespace Lab5
     {
         static void Main(string[] args)
         {
+            Dog myDog = new Dog();
+            myDog.Name = "Fido";
+
+            // To do: uncomment the following lines of code to call the methods
+            myDog.bark();
+            myDog.doTrick("Fetch");
+
+            Console.Read();
+
         }
 
         public double getArea(double height, double width)
@@ -30,10 +40,7 @@ namespace Lab5
             //4)
                 //The difference between a static and non static method is that a static method is one that exists outside of any instance, meaning any instance of the object will have the same method exactly. A non static method is one in which an instance of the method exists for every instance of the object.
 
-           
-
-
-        }
+                }
     }
 
 }
